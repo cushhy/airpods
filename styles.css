@@ -88,15 +88,14 @@ input {
 
 .header {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     max-width: 1379px;
     height: 60px;
 
     background: linear-gradient( to right, #122840, #1a344f );
 
     border-radius: 0 60px 60px 0;
-
-    display: flex;
-    justify-content: space-between;
 }
 
 .header__logo {
@@ -109,35 +108,6 @@ input {
     height: 50px;
 }
 
-.header__btn {
-    width: 250px;
-    height: 40px;
-    padding-top: 20px;
-    margin-top: 41px;
-    margin-right: 200px;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    text-transform: uppercase;
-    font-family: 'Gelion-Regular';
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-
-    background-color: #0098e4;
-    align-items: center;
-    text-align: center;
-
-    border-radius: 60px;
-
-    transition: all .2s ease-in-out;
-}
-
-.header__btn:hover {
-    background-color: #fff;
-    color: #0098e4;
-}
 
 /* nav */
 
@@ -155,7 +125,7 @@ input {
     border-radius: 10px;
 
     font-family: 'GelionThin';
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
     text-decoration: none;
 
@@ -172,7 +142,7 @@ input {
 .intro {
     padding-top: 41px;
     width: 100%;
-    height: auto;
+    height: 100vh;
     align-items: center;
     text-align: center;
 
@@ -187,7 +157,7 @@ input {
 }
 
 .intro__bgtext {
-    font-size: 500px;
+    font-size: 31.25rem;
     font-family: 'Gelion-SemiBold';
     position: absolute;
     top: 20%;
@@ -204,7 +174,7 @@ input {
     margin-top: 42px;
     margin-bottom: 30px;
     font-family: 'Gelion-SemiBold';
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #fff;
 }
 
@@ -215,7 +185,7 @@ input {
 
     text-transform: uppercase;
     font-family: 'Gelion-Regular';
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
     text-decoration: none;
     border-radius: 60px;
@@ -230,34 +200,39 @@ input {
     color: #0098e4;
 }
 
-.intro__logos {
-    margin-top: 351px;
+.logos {
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+
+    background-color: #18324D; 
 }
 
-.intro__logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 13px;
-    grid-template-rows: 195px;
-    margin-left: 50px;
-}
-
-.logo__item {
-    width: 25%;
-    margin-right: 50px;
+.logos__img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px; 
 }
 
 .logo__item img {
-    width: 350%;
-    height: auto;
+    max-width: 300px;
+    height: auto; 
+}
+
+.logo__item {
+    flex: 1 1 25%;
 }
 
 /* technology */
 
 .technology {
     padding-top: 41px;
+    padding-bottom: 50px;
     width: 100%;
-    height: 1586px;
+    height: auto;
     align-items: center;
     text-align: center;
     position: relative;
@@ -268,48 +243,50 @@ input {
 }
 
 .technology__airpod {
-    margin-top: 300px;
+    max-width: 617px;
+    max-height: 790px;
+    margin-top: 200px;
     position: relative;
 }
 
 .technology__up {
     position: absolute;
-    top: 45%;
+    top: 38%;
     left: 47%;
 
     z-index: 100;
     text-align: right;
     font-family: 'Gelion-Regular';
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: #fff;
 }
 
 .technology__down {
     position: absolute;
-    top: 19%;
+    top: 13%;
     left: 38.5%;
 
     z-index: 100;
     text-align: left;
     font-family: 'Gelion-Regular';
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: #fff;
 }
 
 .technology__cards {
-    margin-left: 150px;
-    padding-bottom: 40px;
     display: flex;
-    position: absolute;
-    bottom: 0;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    margin-left: 135px;
 }
 
 .technology__item {
-    width: 25%;
+    max-width: 25rem;
     height: 530px;
-    margin-right: 50px;
-    border-radius: 30px;
+    flex: 1 1 25%;
+    margin-right: 35px;
 
+    border-radius: 10px;
     background-color: #18324d;
     box-shadow: 0px 0px 8px 0px rgba(0, 152, 228, 0.5);
 
@@ -335,13 +312,13 @@ input {
 .technology__title {
     margin-bottom: 60px;
     padding: 0 70px;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #fff;
     font-family: 'Gelion-Regular';
 }
 
 .technology__subtitle {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #c9c8c8;
     font-family: 'GelionThin';
 }
@@ -350,22 +327,23 @@ input {
 
 .complectation {
     width: 100%;
-    height: 1080px;
-    align-items: center;
-    text-align: center;
-    position: relative;
-
+    height: auto;
+    padding-bottom: 100px;
 
     background: linear-gradient(to bottom, #11263b, #193857 );
 }
 
 .complectation__cards {
-    margin-left: 126px;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    margin-left: 135px;
 }
 
 .complectation__item {
-    width: 50%;
+    padding-right: 30px;
+    max-width: 50rem;
+    flex: 1 1 50%;
     height: 990px;
     margin-right: 50px;
     text-align: left;
@@ -388,7 +366,7 @@ input {
     margin-left: 106px;
     margin-bottom: 57px;
     font-family: 'Gelion-Regular';
-    font-size: 42px;
+    font-size: 2.625rem;
     color: #fff;
 }
 
@@ -402,8 +380,13 @@ input {
 .complectation__text {
     margin-left: 37px;
     font-family: 'GelionThin';
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #fff;
+}
+
+.complectation__correct {
+    max-width: 65px;
+    height: auto;
 }
 
 /* buycard */
@@ -419,12 +402,19 @@ input {
     background: linear-gradient(to top, #11263b, #193857 );
 }
 
+.buycardimg {
+    max-width: 40vw;
+    height: auto;
+}
+
 .buycard {
     display: flex;
     margin-left: 100px;
 }
 
 .buycard__left {
+    width: 613px;
+    height: 407px;
     position: absolute;
     margin-left: 100px;
     top: 0;
@@ -435,12 +425,12 @@ input {
     position: absolute;
     right: 0;
     display: flex;
-    margin-right: 200px;
+    margin-right: 300px;
     margin-top: 100px;
 }
 
 .buycard__img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     position: relative;
 }
@@ -452,7 +442,7 @@ input {
 .buycard__title {
     margin-bottom: 30px;
     font-family: 'Gelion-Regular';
-    font-size: 42px;
+    font-size: 2.625rem;
     color: #fff;
 }
 
@@ -462,13 +452,13 @@ input {
 
 .buycard__subtitle {
     font-family: 'Gelion-Regular';
-    font-size: 42px;
+    font-size: 2.625rem;
     color: #fff;
 }
 
 .buycard__subsubtitle {
     font-family: 'GelionThin';
-    font-size: 42px;
+    font-size: 2.625rem;
     color: #fff;
 }
 
@@ -480,7 +470,7 @@ input {
     
 
     font-family: 'Gelion-Medium';
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #0098e4;
     text-decoration: none;
     text-transform: uppercase;
@@ -527,7 +517,7 @@ input {
     margin-bottom: 20px;
 
     font-family: 'Gelion-Regular';
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
 }
 
@@ -538,7 +528,7 @@ input {
 
 .footer__item a{
     font-family: 'GelionThin';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #c9c8c8;
     text-decoration: none;
 
@@ -550,10 +540,9 @@ input {
 }
 
 .footer__right {
-    width: 100%;
+    width: 670px;
     height: 350px;
-
-    padding-left: 100px;
+    margin-left: 96px;
     padding-top: 100px;
 
     background-color: #18324D;
@@ -638,6 +627,12 @@ input {
     border: 1px solid #fff;
 }
 
+
+@media (max-width: 1285px) {
+    .intro__bgtext {
+        font-size: 30vw;
+    }
+}
 
 
 
