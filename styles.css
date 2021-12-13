@@ -229,7 +229,7 @@ input {
 /* technology */
 
 .technology {
-    padding-top: 41px;
+    padding-top: 30px;
     padding-bottom: 50px;
     width: 100%;
     height: auto;
@@ -245,13 +245,13 @@ input {
 .technology__airpod {
     max-width: 617px;
     max-height: 790px;
-    margin-top: 200px;
+    margin-top: 100px;
     position: relative;
 }
 
-.technology__up {
+.technology__down {
     position: absolute;
-    top: 38%;
+    top: 34%;
     left: 47%;
 
     z-index: 100;
@@ -261,9 +261,9 @@ input {
     color: #fff;
 }
 
-.technology__down {
+.technology__up {
     position: absolute;
-    top: 13%;
+    top: 7%;
     left: 38.5%;
 
     z-index: 100;
@@ -277,10 +277,11 @@ input {
     display: flex;
     flex-wrap: wrap;
     row-gap: 24px;
-    margin-left: 135px;
+    margin-left: 100px;
 }
 
 .technology__item {
+    min-width: 25rem;
     max-width: 25rem;
     height: 530px;
     flex: 1 1 25%;
@@ -295,9 +296,7 @@ input {
 .technology__img {
     width: 100px;
     height: 100px;
-    margin-left: 138px;
-    margin-top: 94px;
-    margin-bottom: 71px;
+    margin: 94px auto 71px auto;
 
     background-color: #1c3754;
 
@@ -306,19 +305,19 @@ input {
 }
 
 .technology__img img {
-    padding-top: 20px;
+    margin: 20px auto;
 }
 
 .technology__title {
     margin-bottom: 60px;
     padding: 0 70px;
-    font-size: 1.875rem;
+    font-size: 1.7rem;
     color: #fff;
     font-family: 'Gelion-Regular';
 }
 
 .technology__subtitle {
-    font-size: 1.5625rem;
+    font-size: 1.4rem;
     color: #c9c8c8;
     font-family: 'GelionThin';
 }
@@ -337,7 +336,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     row-gap: 24px;
-    margin-left: 135px;
+    margin-left: 100px;
 }
 
 .complectation__item {
